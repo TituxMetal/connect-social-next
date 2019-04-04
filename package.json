@@ -1,0 +1,43 @@
+{
+  "name": "connect-social-next",
+  "description": "A social network built with Next.js and Expressjs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Desktop | Lang Guillaume <lang.guillaume@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "env-cmd ./dev.env nodemon server.js",
+    "build": "next build",
+    "test": "jest --watch",
+    "test-coverage": "jest --coverage tests/*.test.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "server/**/*.js",
+      "!**/node_modules/**",
+      "!**/tests/report/**",
+      "!**/.next/**/*"
+    ],
+    "coverageDirectory": "./tests/report",
+    "coverageReporters": [
+      "html"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "env-cmd": "^8.0.2",
+    "jest": "^24.7.0",
+    "nodemon": "^1.18.10",
+    "supertest": "^4.0.2"
+  }
+}
