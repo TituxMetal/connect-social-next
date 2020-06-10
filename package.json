@@ -29,7 +29,7 @@
     "axios": "^0.18.1",
     "express": "^4.17.1",
     "next": "^8.0.4",
-    "react": "^16.8.6",
+    "react": "^16.13.1",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0"
   },
