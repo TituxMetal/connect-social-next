@@ -37,7 +37,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "env-cmd": "^10.1.0",
     "jest": "^24.7.0",
-    "nodemon": "^1.18.10",
+    "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
   }
 }
